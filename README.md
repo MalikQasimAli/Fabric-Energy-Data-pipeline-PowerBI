@@ -13,3 +13,23 @@ The project follows a Medallion Architecture in Microsoft Fabric, transforming E
 The Gold-layer dimensional model is used by Power BI for electricity demand, generation, forecasting, and regional analysis.
 
 ![Power BI Dashboard](powerbi.png)
+
+## 🛠️ Technologies & Concepts
+
+- Microsoft Fabric
+- Fabric Lakehouse
+- PySpark / Apache Spark
+- Delta Lake
+- Power BI
+- DAX
+- Python
+- REST API Integration
+- EIA Open Data API
+- Medallion Architecture (Bronze, Silver, Gold)
+- ETL / ELT Pipelines
+- Data Cleaning & Transformation
+- Data Quality Validation
+- Dimensional Modeling
+- Star Schema
+- Semantic Modeling
+- Data Analytics
