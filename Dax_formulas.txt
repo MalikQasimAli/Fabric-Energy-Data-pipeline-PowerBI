@@ -1,0 +1,94 @@
+
+ 1. TOTAL DEMAND
+ Total electricity demand in MWh
+
+Total Demand =
+SUM(fact_electricity_hourly[demand_mwh])
+
+
+ 2. TOTAL GENERATION
+ Total electricity generation in MWh
+
+Total Generation =
+SUM(fact_electricity_hourly[generation_mwh])
+
+
+ 3. TOTAL FORECAST
+ Total forecasted electricity demand in MWh
+
+Total Forecast =
+SUM(fact_electricity_hourly[forecast_mwh])
+
+
+ 4. TOTAL INTERCHANGE
+ Total electricity interchange in MWh
+
+Total Interchange =
+SUM(fact_electricity_hourly[interchange_mwh])
+
+
+ 5. FORECAST ERROR
+ Difference between actual demand and forecast demand
+
+Forecast Error =
+[Total Demand] - [Total Forecast]
+
+
+ 6. FORECAST ERROR %
+ Forecast error relative to forecast demand
+
+Forecast Error % =
+DIVIDE(
+    [Total Demand] - [Total Forecast],
+    [Total Forecast],
+    0
+)
+
+
+ 7. PEAK DEMAND
+ Highest hourly demand value in the current filter context
+
+Peak Demand =
+MAX(fact_electricity_hourly[demand_mwh])
+
+
+ ============================================
+ TWh MEASURES
+ 1 TWh = 1,000,000 MWh
+ ============================================
+
+
+ 8. TOTAL DEMAND TWh
+
+Total Demand TWh =
+DIVIDE(
+    [Total Demand],
+    1000000
+)
+
+
+ 9. TOTAL GENERATION TWh
+
+Total Generation TWh =
+DIVIDE(
+    [Total Generation],
+    1000000
+)
+
+
+ 10. TOTAL FORECAST TWh
+
+Total Forecast TWh =
+DIVIDE(
+    [Total Forecast],
+    1000000
+)
+
+
+ 11. FORECAST ERROR TWh
+
+Forecast Error TWh =
+DIVIDE(
+    [Forecast Error],
+    1000000
+)
